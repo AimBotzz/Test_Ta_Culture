@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test Ta Culture</string>
+    <string name="pseudo">Adresse Mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="button">se connecter</string>
+    <string name="Creer">Créer un compte</string>
+</resources>
