@@ -1,18 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Play">
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
+    android:clipToPadding="false"
+    android:background="@drawable/fondsite"
+    android:weightSum="20"
+    android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="49dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:text="@string/scorelabel" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            android:text="@string/score" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="30dp"
+        android:layout_margin="10sp"
+        android:layout_weight="5"
+        android:text="@string/Question" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="10"
+        >
+        <Button
+            android:id="@+id/musique"
+            android:layout_width="150sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:onClick="playSound"
+            android:textSize="15dp"
+            android:text="@string/musique" />
+            <Button
+                android:id="@+id/reponse1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/reponse1" />
+
+            <Button
+                android:id="@+id/reponse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/reponse2" />
+
+            <Button
+                android:id="@+id/reponse3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/reponse3" />
+
+            <Button
+                android:id="@+id/reponse4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="@string/reponse4" />
+
+        <Button
+            android:id="@+id/nextQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/questionSuivante"
+            android:visibility="invisible"
+             />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

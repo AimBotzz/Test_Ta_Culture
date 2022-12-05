@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:clipToPadding="false"
-    android:background="@drawable/revy"
+    android:background="@drawable/fondsite"
     android:layout_height="match_parent">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -21,17 +21,17 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="@string/pseudo" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
-        android:textSize="50sp"
+        android:layout_width="match_parent"
+        android:textSize="30sp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/password"
